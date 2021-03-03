@@ -22,7 +22,7 @@ in testa.**
 
 ```markdown
    
- struct elem *push( \*struct\* elem *top, struct elem *node ) {
+ struct elem *push( \*struct*\ elem *top, struct elem *node ) {
            
    if( !top ) {
            top = node;

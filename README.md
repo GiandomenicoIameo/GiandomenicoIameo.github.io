@@ -11,7 +11,7 @@ o nelle librerie private. Un esempio e' stdlist.c.**
 file, file di testo che permettono al programmatore di utilizzare 
 lo specifico insieme di funzioni della libreria ad esse associate.**
 
-**Il file contiene alcune delle piu' inportanti funzioni riguardo
+**Il file contiene alcune delle piu' importanti funzioni riguardo
 alle liste semplicemente concatenate. Ogni funzione dichiarata e' 
 stata studiata nel minimo dettaglio per garantire, a chi le utilizza, 
 prestazioni efficienti in relazione al tempo e allo spazio utilizzato.**

@@ -1,6 +1,8 @@
 Introduzione alla libreria stdlist.c
 ===================
 
+----------
+
 **Come e' possibile notare dal titolo, all'interno 
 del file sono state implementate le più importanti
 funzioni sulle liste semplicemente concatenate.**

@@ -2,7 +2,7 @@
 
 _**Come e' possibile notare dal titolo, all'interno 
 del file sono state implementate le più importanti
-funzioni sulle liste semplicemente concatenate._**
+funzioni sulle liste semplicemente concatenate.
 
 _**una lista concatenata ( o linked list ) è una struttura dati 
 dinamica, tra quelle fondamentali usate nella programmazione. 
@@ -10,13 +10,13 @@ Consiste di una sequenza di nodi, ognuno contenente campi di
 dati arbitrari e uno o due riferimenti ( "link" ) che puntano 
 al nodo successivo e/o precedente. Una lista concatenata è un 
 tipo di dato auto-referente, in quanto contiene un puntatore 
-ad un altro dato dello stesso tipo._**
+ad un altro dato dello stesso tipo.
 
 _**Ogni funzione dichiarata nel file e' stata studiata nel minimo
-dettaglio per garantire, a chi le utilizza, prestazioni efficienti._**
+dettaglio per garantire, a chi le utilizza, prestazioni efficienti.
 
 _**Qui di seguito, e' mostrato un esempio della funzione di inserimento
-in testa._**
+in testa.
 
 ### Funzione push()
 
@@ -31,7 +31,7 @@ in testa._**
            top = node;
    }
    return top;
- }**
+ }
 ```
 
-_**Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github. _**
+_**Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.

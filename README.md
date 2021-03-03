@@ -22,7 +22,7 @@ in testa.**
 
 ```markdown
    
- struct elem *push( struct elem *top, struct elem *node ) {
+ **struct elem *push( struct elem *top, struct elem *node ) {
            
    if( !top ) {
            top = node;
@@ -33,12 +33,5 @@ in testa.**
    return top;
  }
 ```
-
-\`\`\`java
-void doThings(SyntaxHighlighting sh) {
-    sh.getInstance()
-        .setEnabled(true)
-        .setLanguage("python");
-}
 
 **Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.**

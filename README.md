@@ -1,22 +1,22 @@
 ## Introduzione alla libreria stdlist.c
 
-_**Come e' possibile notare dal titolo, all'interno 
+**_Come e' possibile notare dal titolo, all'interno 
 del file sono state implementate le più importanti
-funzioni sulle liste semplicemente concatenate.
+funzioni sulle liste semplicemente concatenate._**
 
-_**una lista concatenata ( o linked list ) è una struttura dati 
+**_una lista concatenata ( o linked list ) è una struttura dati 
 dinamica, tra quelle fondamentali usate nella programmazione. 
 Consiste di una sequenza di nodi, ognuno contenente campi di 
 dati arbitrari e uno o due riferimenti ( "link" ) che puntano 
 al nodo successivo e/o precedente. Una lista concatenata è un 
 tipo di dato auto-referente, in quanto contiene un puntatore 
-ad un altro dato dello stesso tipo.
+ad un altro dato dello stesso tipo._**
 
-_**Ogni funzione dichiarata nel file e' stata studiata nel minimo
-dettaglio per garantire, a chi le utilizza, prestazioni efficienti.
+**_Ogni funzione dichiarata nel file e' stata studiata nel minimo
+dettaglio per garantire, a chi le utilizza, prestazioni efficienti._**
 
-_**Qui di seguito, e' mostrato un esempio della funzione di inserimento
-in testa.
+**_Qui di seguito, e' mostrato un esempio della funzione di inserimento
+in testa._**
 
 ### Funzione push()
 
@@ -34,4 +34,4 @@ in testa.
  }
 ```
 
-_**Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.
+**_Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github._**

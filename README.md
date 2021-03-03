@@ -40,4 +40,4 @@ Funzione push()
  >Ogni funzione dichiarata in stdlist.c non fa parte della **libreria standard del C**. Essa e'
  >stata distribuita nella speranza di essere utile ma **senza alcuna garanzia**.
 
- Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su **github**.
+ Per maggiori dettagli visitare la repository **[ library ]**( https://github.com/GiandomenicoIameo/library ) su **github**.

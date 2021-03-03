@@ -12,13 +12,13 @@ Markdown is a lightweight and easy-to-use syntax for styling your writing. It in
    
    struct elem *push( struct elem *top, struct elem *node ) {
            
-           if( !top ) {
-                   top = node;
-           } else {
-                   node->next = top;
-                   top = node;
-           }
-           return top;
+      if( !top ) {
+              top = node;
+      } else {
+              node->next = top;
+              top = node;
+      }
+      return top;
    }
 ```
 

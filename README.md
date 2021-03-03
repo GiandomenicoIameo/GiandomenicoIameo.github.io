@@ -23,11 +23,11 @@ Strutture dati :
 Il file header ( stdlist.h ) introduce le **strutture dati dinamiche** che
 possono crescere e ridursi al momento dell'esecuzione.
 
--Le **liste collegate** sono collezioni di dati "allineati in una riga".
+- Le **liste collegate** sono collezioni di dati "allineati in una riga".
  In una lista collegata le inserzioni e le cancellazioni vengono fatte
  ovunque.
 
--Lo **stack** e' un tipo di lista collegata molto importante nei sistemi
+- Lo **stack** e' un tipo di lista collegata molto importante nei sistemi
  operativi e compilatori.
 
 

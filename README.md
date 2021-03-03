@@ -20,8 +20,7 @@ in testa.**
 
 ### Funzione push()
 
-```markdown
-   
+```
  struct elem *push( struct elem *top, struct elem *node ) {
            
    if( !top ) {

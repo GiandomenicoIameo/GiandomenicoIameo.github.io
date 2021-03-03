@@ -41,14 +41,12 @@ e' la seguente :
 
 ```
 // Struttura del nodo
-
 struct elem {
     int data;
     struct elem *next;
 };
 
 // Struttura coda
-
 struct equeue {
     struct elem *top;
     struct elem *end;
@@ -61,51 +59,5 @@ sarà in grado di conservare sia un puntatore alla testa che al nodo terminale.
 Di conseguenza, le operazioni di inserimento e cancellazione verranno effettuate
 tempo costante.  
 
-Funzione allocate :
-----------
 
-```
-struct elem *allocate( int key ) {
-
-  struct elem *node;
-
-  node = ( struct elem* )malloc( sizeof( struct elem ) );
-  if( !node ) return node;
-
-  node->data = key;
-  node->next = NULL;
-
-  return node;
-}
-```
-
-Descrizione :
-----------
-
-Creare e mantenere strutture dinamiche di dati che possono crescere e ridursi durante
-l'esecuzione del programma richiede l'**allocazione dinamica della memoria**, ossia la
-capacita', da parte del programma, di _ottenere un maggiore spazio di memoria in run-time_,
-così da contenere nuovi nodi.
-La funzione ha lo scopo proprio di allocare memoria per i nuovi nodi e inizializzare i membri
-della struttura.
-
-Funzione push :
-----------
-
-```
-struct elem *push( struct elem *top, struct elem *node ) {
-
-  if( !top ) {
-          top = node;
-  } else {
-          node->next = top;
-          top = node;
-  }
-  return top;
-}
-```
-
-Descrizione :
-----------
-
- Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.
+Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

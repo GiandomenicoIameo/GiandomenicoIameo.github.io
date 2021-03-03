@@ -34,4 +34,11 @@ in testa.**
  }
 ```
 
+\`\`\`java
+void doThings(SyntaxHighlighting sh) {
+    sh.getInstance()
+        .setEnabled(true)
+        .setLanguage("python");
+}
+
 **Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.**

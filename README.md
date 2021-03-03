@@ -1,4 +1,4 @@
-Introduzione alla libreria stdlist.c
+Libreria stdlist.c
 ===================
 
 ----------

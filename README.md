@@ -16,32 +16,22 @@ alle **liste semplicemente concatenate**. Ogni funzione dichiarata e'
 stata studiata nel minimo dettaglio per garantire, a chi le utilizza, 
 prestazioni efficienti in relazione al **tempo** e allo **spazio** utilizzato.
 
-Qui di seguito, e' mostrato un esempio della funzione di inserimento
-di un elemento in testa a una lista.
-
-
-Funzione push()
+Funzione allocate :
 ----------
 
 ```
- struct elem *push( struct elem *top, struct elem *node ) {
-           
-   if( !top ) {
-           top = node; 
-   } else {
-           node->next = top;
-           top = node;
-   }
-   return top;
- }
+struct elem *allocate( int key ) {
+
+  struct elem *node;
+
+  node = ( struct elem* )malloc( sizeof( struct elem ) );
+  if( !node ) return node;
+
+  node->data = key;
+  node->next = NULL;
+
+  return node;
+}
 ```
-
-
- >**Nota :** 
- >
- >Ogni funzione dichiarata in stdlist.c non fa parte della **libreria standard del C**. Essa e'
- >stata distribuita nella speranza di essere utile ma **senza alcuna garanzia**.
-
-
 
  Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

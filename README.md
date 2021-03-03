@@ -1,8 +1,8 @@
 ## Introduzione alla libreria stdlist.c
 
-Come e' possibile notare dal titolo, all'interno 
+**Come e' possibile notare dal titolo, all'interno 
 del file sono state implementate le più importanti
-funzioni sulle liste semplicemente concatenate. 
+funzioni sulle liste semplicemente concatenate.**
 
 una lista concatenata ( o linked list ) è una struttura dati 
 dinamica, tra quelle fondamentali usate nella programmazione. 

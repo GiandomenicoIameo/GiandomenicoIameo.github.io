@@ -16,10 +16,8 @@ alle **liste semplicemente concatenate**. Ogni funzione dichiarata e'
 stata studiata nel minimo dettaglio per garantire, a chi le utilizza, 
 prestazioni efficienti in relazione al **tempo** e allo **spazio** utilizzato.
 
-
 Funzione allocate :
 ----------
-
 
 ```
 struct elem *allocate( int key ) {
@@ -35,6 +33,7 @@ struct elem *allocate( int key ) {
   return node;
 }
 ```
+
 Descrizione :
 ----------
 

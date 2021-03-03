@@ -1,4 +1,4 @@
-<i class="icon-file"></i> Libreria stdlist.c
+Libreria stdlist.c
 ===================
 
 ----------
@@ -21,6 +21,7 @@ di un elemento in testa a una lista.
 
 Funzione push()
 -------------
+<i class="icon-file"></i>
 
 ```
  struct elem *push( struct elem *top, struct elem *node ) {

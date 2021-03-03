@@ -10,16 +10,16 @@ Esempio di implementazione della funzione push()
 
 ```markdown
    
-   struct elem *push( struct elem *top, struct elem *node ) {
+ struct elem *push( struct elem *top, struct elem *node ) {
            
-      if( !top ) {
-              top = node;
-      } else {
-              node->next = top;
-              top = node;
-      }
-      return top;
+   if( !top ) {
+           top = node;
+   } else {
+           node->next = top;
+           top = node;
    }
+   return top;
+ }
 ```
 
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).

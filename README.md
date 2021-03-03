@@ -40,19 +40,24 @@ che punta a una struttura dello stesso tipo. La definizione delle strutture
 e' la seguente :
 
 ```
-// lista collegata
+// Struttura del nodo
 struct elem {
     int data;
     struct elem *next;
 };
 
-// coda
+// Struttura coda
 struct equeue {
     struct elem *top;
     struct elem *end;
 };
 ```
 
+E' possibile notare che la definizione della strutta dati coda anziché
+memorizzare un solo puntatore ne' memorizza due. In questo modo la struttura
+sarà in grado di conservare sia un puntatore alla testa che al nodo terminale.
+Di conseguenza, le operazioni di inserimento e cancellazione verranno effettuate
+tempo costante.  
 
 Funzione allocate :
 ----------

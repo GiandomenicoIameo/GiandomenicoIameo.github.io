@@ -22,14 +22,7 @@ Esempio di implementazione della funzione push()
  }
 ```
 
-Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ).
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-```markdown
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/GiandomenicoIameo/GiandomenicoIameo.github.io/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-```
+Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.
 
 ### Support or Contact
 

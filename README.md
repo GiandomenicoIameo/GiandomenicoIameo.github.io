@@ -26,7 +26,7 @@ Funzione push()
  struct elem *push( struct elem *top, struct elem *node ) {
            
    if( !top ) {
-           top = node; 0
+           top = node; 
    } else {
            node->next = top;
            top = node;

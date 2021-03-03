@@ -4,10 +4,10 @@ Come e' possibile notare dal titolo, all'interno
 del file sono state implementate le più importanti
 funzioni sulle liste semplicemente concatenate. 
 
-una lista concatenata (o linked list) è una struttura dati 
+una lista concatenata ( o linked list ) è una struttura dati 
 dinamica, tra quelle fondamentali usate nella programmazione. 
 Consiste di una sequenza di nodi, ognuno contenente campi di 
-dati arbitrari ed uno o due riferimenti ("link") che puntano 
+dati arbitrari e uno o due riferimenti ( "link" ) che puntano 
 al nodo successivo e/o precedente. Una lista concatenata è un 
 tipo di dato auto-referente, in quanto contiene un puntatore 
 ad un altro dato dello stesso tipo.

@@ -28,8 +28,30 @@ possono crescere e ridursi al momento dell'esecuzione.
  ovunque.
 
 - Lo **stack** e' un tipo di lista collegata molto importante nei sistemi
- operativi e compilatori.
+ operativi e compilatori. Le inserzioni e cancellazioni vengono fatte
+ _solo a un estremo_, ovvero la sua **cima**.
 
+- Le **code** rappresentano le linee di attesa; le inserzioni vengono fatte
+  _solo alla fine_ ( indicata con **tail** ) di una coda e le rimozioni
+  vengono fatte _solo all'inizio_( indicato con **head** ) di una coda.
+
+Ricordate che una _struttura autoreferenziale_ contiene un membro puntatore
+che punta a una struttura dello stesso tipo. La definizione delle strutture
+e' la seguente :
+
+```
+// lista collegata
+struct elem {
+    int data;
+    struct elem *next;
+};
+
+// coda
+struct equeue {
+    struct elem *top;
+    struct elem *end;
+};
+```
 
 
 Funzione allocate :

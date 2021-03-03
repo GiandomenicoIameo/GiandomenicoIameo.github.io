@@ -22,6 +22,7 @@ Esempio di implementazione della funzione push()
  }
 ```
 
+Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ).
 For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
 
 ### Jekyll Themes

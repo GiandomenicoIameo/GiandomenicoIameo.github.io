@@ -41,12 +41,14 @@ e' la seguente :
 
 ```
 // Struttura del nodo
+
 struct elem {
     int data;
     struct elem *next;
 };
 
 // Struttura coda
+
 struct equeue {
     struct elem *top;
     struct elem *end;

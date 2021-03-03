@@ -21,8 +21,8 @@ dettaglio per garantire, a chi le utilizza, prestazioni efficienti.**
 **Qui di seguito, e' mostrato un esempio della funzione di inserimento
 in testa.**
 
-### Funzione push()
-
+ Funzione push()
+ -------------
 ```
  struct elem *push( struct elem *top, struct elem *node ) {
            

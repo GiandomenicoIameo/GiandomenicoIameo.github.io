@@ -19,7 +19,9 @@ prestazioni efficienti in relazione al **tempo** e allo **spazio** utilizzato.
 Qui di seguito, e' mostrato un esempio della funzione di inserimento
 di un elemento in testa a una lista.
 
-#### <i class="icon-file"></i> Funzione push()
+
+Funzione push()
+----------
 
 ```
  struct elem *push( struct elem *top, struct elem *node ) {

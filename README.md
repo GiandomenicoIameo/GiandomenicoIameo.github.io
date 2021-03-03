@@ -1,10 +1,24 @@
-## Benvenuto
+## Introduzione alla libreria stdlist.c
 
-You can use the [editor on GitHub](https://github.com/GiandomenicoIameo/GiandomenicoIameo.github.io/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+Come e' possibile notare dal titolo, all'interno 
+del file sono state implementate le più importanti
+funzioni sulle liste semplicemente concatenate. 
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+una lista concatenata (o linked list) è una struttura dati 
+dinamica, tra quelle fondamentali usate nella programmazione. 
+Consiste di una sequenza di nodi, ognuno contenente campi di 
+dati arbitrari ed uno o due riferimenti ("link") che puntano 
+al nodo successivo e/o precedente. Una lista concatenata è un 
+tipo di dato auto-referente, in quanto contiene un puntatore 
+ad un altro dato dello stesso tipo.
 
-### Funzione push() della libreria stdlist.h
+Ogni funzione dichiarata nel file e' stata studiata nel minimo
+dettaglio per garantire, a chi le utilizza, prestazioni efficienti.
+
+Qui di seguito, e' mostrato un esempio della funzione di inserimento
+in testa.
+
+### Funzione push()
 
 ```markdown
    
@@ -21,7 +35,3 @@ Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://j
 ```
 
 Per maggiori dettagli visitare la repository [ library ]( https://github.com/GiandomenicoIameo/library ) su github.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://docs.github.com/categories/github-pages-basics/) or [contact support](https://support.github.com/contact) and we’ll help you sort it out.

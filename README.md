@@ -9,7 +9,7 @@ o nelle librerie private. Un esempio e' stdlist.c.
 
 Insieme alla libreria vengono inoltre forniti gli **header
 file**, file di testo che permettono al programmatore di utilizzare
-lo specifico insieme di funzioni della libreria ad esse associate.
+lo specifico insieme di funzioni della libreria a esse associate.
 
 Il file contiene alcune delle piu' importanti funzioni riguardo
 alle **liste semplicemente concatenate**. Ogni funzione dichiarata e'

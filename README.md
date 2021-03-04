@@ -108,7 +108,7 @@ creare il modo di riferirsi ad essa.
 
 
 
-$$ a $$
+$$a$$
 
 
 

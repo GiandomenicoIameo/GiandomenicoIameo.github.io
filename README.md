@@ -108,7 +108,7 @@ creare il modo di riferirsi ad essa.
 
 
 
-$$a$$
+\\[ \forall  a \big(  \space \big\{ a, a \big\} =  \big\{a\big\} \space \big) \\]
 
 
 

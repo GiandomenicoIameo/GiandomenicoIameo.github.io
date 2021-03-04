@@ -106,8 +106,11 @@ Creazione della lista :
 Per creare una lista, basta definirla, ovvero è sufficiente
 creare il modo di riferirsi ad essa.
 
-> Nota :
->
+$$
+\forall  a \big(  \space \big\{ a, a \big\} =  \big\{a\big\} \space \big )
+$$
+
+
 > E' bene ricordare che una lista e' un insieme e quindi per
 > definizione $$ \forall  a \big(  \space \big\{ a, a \big\} =  \big\{a\big\} \space \big) $$,
 > dunque ogni elemento $$ a \in L $$, dove $$ L $$ e' la nostra lista, sarà

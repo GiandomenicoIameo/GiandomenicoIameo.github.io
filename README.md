@@ -17,7 +17,7 @@ stata studiata nel minimo dettaglio per garantire, a chi le utilizza,
 prestazioni efficienti in relazione al **tempo** e allo **spazio** utilizzato.
 
 
-Strutture dati :
+Strutture dati utilizzate :
 ----------
 
 Il file header ( stdlist.h ) introduce le **strutture dati dinamiche** che
@@ -53,123 +53,29 @@ struct equeue {
 };
 ```
 
-E' possibile notare che la definizione della struttura dati coda anziché
-memorizzare un solo puntatore ne' memorizza due.
-In questo modo la struttura sarà in grado di conservare sia
-un puntatore alla testa che al nodo terminale.
-Di conseguenza, questo comporterà un enorme vantaggio per quanto riguarda
-l'inserimento e la cancellazione di un nodo.
+Lo stile di scrittura del codice, come potete notare, rispecchia lo 
+stile adottato in **GNOME**. Sebbene lo stile sia una questione di gusti, in 
+**GNOME** preferiscono uno stile che promuova coerenza, leggibilità e 
+manutenibilità. 
 
-Le liste collegate :
+Qui di seguito vi presentiamo un esempio di scrittura del codice :
+
+Funzione pop :
 ----------
-
-Una **lista** è una **struttura dati ricorsiva**
-(formata da elementi dello stesso tipo e collegati insieme) la
-cui lunghezza può variare dinamicamente.
-
-I suoi elementi sono variabili dinamiche e vengono creati e/o
-distrutti a tempo di esecuzione producendo una struttura
-dati che cresce o diminuisce a seconda delle esigenze del
-programma in esecuzione.
-
-È possibile implementare liste anche tramite array, ma ciò
-può avvenire solo quando si conoscono esattamente le
-dimensioni della lista.
-
-La definizione di una struttura concatenata è di solito accompagnata da
-un certo numero di funzioni, che hanno il compito di gestirla, cioè
-eseguire le operazioni di **inserimento**, di **eliminazione** e di **ricerca** di
-oggetti.
-
-Ogni lista è definita da una variabile puntatore
-che punta al primo elemento della lista.
-Nel caso di assenza di elementi (lista vuota) tale
-variabile puntatore assume valore **NULL**.
-In una lista il campo puntatore dell’ultimo elemento
-assume sempre valore **NULL**, per convenzione, per
-segnare la _fine_ della lista.
-
-Allocazione dinamica di liste :
-----------
-
-La creazione di un nuovo nodo ( in qualunque fase dell’esistenza
-di una lista ) avviene creando una nuova istanza della struttura
-tramite allocazione dinamica, ossia la capacità da parte di un
-programma, di _ottenere maggior spazio in memoria al tempo
-dell'esecuzione_.
-Le funzioni **malloc** e **free** e **sizeof** sono essenziali
-per l'allocazione dinamica.
-
-Creazione della lista :
-----------
-
-Per creare una lista, basta definirla, ovvero è sufficiente
-creare il modo di riferirsi ad essa.
-
-La coda :
-----------
-
-Esistono due approcci per implementare una struttura dati di tipo coda in C :
-
-- Code con **capacita illimitata** – struttura dati di tipo lista concatenata.
-- Code con **capacita limitata** – implementazione ad-hoc tramite array.
-
-Come abbiamo fatto notare in precedenza attraverso le due definizioni, una
-struttura dati di tipo coda può essere vista come una struttura dati di tipo
-lista che supporta un numero limitato di operazioni :
-
-- **Enqueue** – inserimento in coda.
-- **Dequeue** – rimozione in testa.
-
-Creazione della coda :
-----------
-
-Per creare una coda, basta definirla, ovvero è sufficiente
-creare il modo di riferirsi a essa.
-L’unica cosa che esiste sempre della coda è il suo **punto di
-accesso** ( o radice ).
-Questa è l’unica componente **allocata staticamente** e
-all’inizio i puntatori **top** e **end** sono inizializzati a **NULL**, in
-quanto non ci sono elementi.
 
 ```
-int main( void ) {
+struct elem *pop( struct elem *top ) {
 
-  struct equeue coda;
+  struct elem *res;
 
-  coda.top = NULL;
-  coda.end = NULL;
-
-  ...
-
-  return 0;
+  if( !top ) {
+          res = top;
+  } else {
+          res = top->next;
+          free( top );
+  }
+  return res;
 }
 ```
 
-Inserimento e cancellazione di un nodo :
-----------
-
-L'operazione di inserimento di un elemento nella struttura dati
-coda viene gestita come un inserimento in coda ad una lista.
-
-Come fase preliminare, il nodo viene creato attraverso la funzione
-allocate(), vengono inizializzati i vari campi della struttura e infine
-viene restituito un puntatore al nodo.
-
-```
-struct elem *allocate( int key ) {
-
-  struct elem *node;
-
-  node = ( struct elem* )malloc( sizeof( struct elem ) );
-  if( !node ) return node;
-
-  node->data = key;
-  node->next = NULL;
-
-  return node;
-}
-```
-
-
-Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.
+Per maggiori dettagli sulla documentazione visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

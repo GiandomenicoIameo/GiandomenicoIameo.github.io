@@ -18,7 +18,10 @@ prestazioni efficienti in relazione al **tempo** e allo **spazio** utilizzato.
 
 
 
+
 Strutture dati utilizzate :
+----------
+
 ----------
 
 Il file header ( stdlist.h ) introduce le **strutture dati dinamiche** che

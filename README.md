@@ -106,8 +106,7 @@ Creazione della lista :
 Per creare una lista, basta definirla, ovvero è sufficiente
 creare il modo di riferirsi ad essa.
 
-
-
+! [formula] (https://render.githubusercontent.com/render/math?math=e^ {i \ pi} = -1)
 
 La coda :
 ----------

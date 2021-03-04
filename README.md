@@ -84,7 +84,7 @@ struct elem *pop( struct elem *top ) {
 
 > Note :
 > 
-> La libreria stdlist.c non fa parte della libreria standard del C. Essa
+> Il file stdlist.c non fa parte della libreria standard del C. Essa
 > e' stata distribuita nella speranza che sia utile,
 > ma **senza alcuna garanzia**.
 

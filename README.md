@@ -78,4 +78,5 @@ struct elem *pop( struct elem *top ) {
 }
 ```
 
-Per maggiori dettagli sulla documentazione visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.
+Per maggiori dettagli sulla documentazione visitare la cartella **[ include ]( https://github.com/GiandomenicoIameo/library/include )** nella
+repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

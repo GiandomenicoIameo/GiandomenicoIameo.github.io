@@ -49,7 +49,7 @@ struct elem {
     struct elem *next;
 };
 
-// Struttura coda
+// Struttura della coda
 struct equeue {
     struct elem *top;
     struct elem *end;

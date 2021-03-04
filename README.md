@@ -54,10 +54,64 @@ struct equeue {
 ```
 
 E' possibile notare che la definizione della struttura dati coda anziché
-memorizzare un solo puntatore ne' memorizza due. In questo modo la struttura
-sarà in grado di conservare sia un puntatore alla testa che al nodo terminale.
+memorizzare un solo puntatore ne' memorizza due.
+In questo modo la struttura sarà in grado di conservare sia
+un puntatore alla testa che al nodo terminale.
 Di conseguenza, questo comporterà un enorme vantaggio per quanto riguarda
 l'inserimento e la cancellazione di un nodo.
+
+Le liste collegate :
+----------
+
+Una **lista** è una **struttura dati ricorsiva**
+(formata da elementi dello stesso tipo e collegati insieme) la
+cui lunghezza può variare dinamicamente.
+
+I suoi elementi sono variabili dinamiche e vengono creati e/o
+distrutti a tempo di esecuzione producendo una struttura
+dati che cresce o diminuisce a seconda delle esigenze del
+programma in esecuzione.
+
+È possibile implementare liste anche tramite array, ma ciò
+può avvenire solo quando si conoscono esattamente le
+dimensioni della lista.
+
+La definizione di una struttura concatenata è di solito accompagnata da
+un certo numero di funzioni, che hanno il compito di gestirla, cioè
+eseguire le operazioni di **inserimento**, di **eliminazione** e di **ricerca** di
+oggetti.
+
+Ogni lista è definita da una variabile puntatore
+che punta al primo elemento della lista.
+Nel caso di assenza di elementi (lista vuota) tale
+variabile puntatore assume valore **NULL**.
+In una lista il campo puntatore dell’ultimo elemento
+assume sempre valore **NULL**, per convenzione, per
+segnare la _fine_ della lista.
+
+Allocazione dinamica di liste :
+----------
+
+La creazione di un nuovo nodo ( in qualunque fase dell’esistenza
+di una lista ) avviene creando una nuova istanza della struttura
+tramite allocazione dinamica, ossia la capacità da parte di un
+programma, di _ottenere maggior spazio in memoria al tempo
+dell'esecuzione_.
+Le funzioni **malloc** e **free** e **sizeof** sono essenziali
+per l'allocazione dinamica.
+
+Creazione della lista :
+----------
+
+Per creare una lista, basta definirla, ovvero è sufficiente
+creare il modo di riferirsi ad essa.
+
+> Nota :
+>
+> E' bene ricordare che una lista e' un insieme e quindi per
+> definizione $$ \forall  a \big(  \space \big\{ a, a \big\} =  \big\{a\big\} \space \big) $$,
+> dunque ogni elemento $$ a \in L $$, dove $$ L $$ e' la nostra lista, sarà
+> distinto da ogni altro.
 
 La coda :
 ----------
@@ -123,14 +177,6 @@ struct elem *allocate( int key ) {
   return node;
 }
 ```
-
-La creazione di un nuovo nodo ( in qualunque fase dell’esistenza
-di una lista ) avviene creando una nuova istanza della struttura
-tramite allocazione dinamica, ossia la capacità da parte di un
-programma, di _ottenere maggior spazio in memoria al tempo
-dell'esecuzione_.
-Le funzioni **malloc** e **free** e **sizeof** sono essenziali
-per l'allocazione dinamica.
 
 
 Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

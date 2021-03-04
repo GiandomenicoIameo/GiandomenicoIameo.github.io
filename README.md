@@ -40,8 +40,7 @@ possono crescere e ridursi al momento dell'esecuzione.
   vengono fatte _solo all'inizio_ ( indicato con **head** ) di una coda.
 
 Ricordate che una _struttura autoreferenziale_ contiene un membro puntatore
-che punta a una struttura dello stesso tipo. La definizione delle strutture
-e' la seguente :
+che punta a una struttura dello stesso tipo. Le definizioni sono le seguenti :
 
 ```
 // Struttura del nodo

@@ -80,8 +80,7 @@ Creazione della coda :
 Per creare una coda, basta definirla, ovvero è sufficiente
 creare il modo di riferirsi a essa.
 L’unica cosa che esiste sempre della coda è il suo **punto di
-accesso** ( o radice ). In alternativa e' possibile definire soltanto
-un puntatore alla struttura coda. Questo concetto verrà chiarito in seguito.
+accesso** ( o radice ).
 Questa è l’unica componente **allocata staticamente** e
 all’inizio i puntatori **top** e **end** sono inizializzati a **NULL**, in
 quanto non ci sono elementi.
@@ -100,45 +99,38 @@ int main( void ) {
 }
 ```
 
-In modo alternativo, definiamo soltanto un puntatore alla struttura coda :
-
-```
-int main( void ) {
-
-  struct equeue* coda = NULL;
-
-  ...
-
-  return 0;
-}
-```
-
-Procedura init() :
+Inserimento e cancellazione di un nodo :
 ----------
 
+L'operazione di inserimento di un elemento nella struttura dati
+coda viene gestita come un inserimento in coda ad una lista.
+
+Come fase preliminare, il nodo viene creato attraverso la funzione
+allocate(), vengono inizializzati i vari campi della struttura e infine
+viene restituito un puntatore al nodo.
+
 ```
-struct equeue *init( void ) {
+struct elem *allocate( int key ) {
 
-  struct equeue *queue;
+  struct elem *node;
 
-  queue = ( struct equeue* )malloc( sizeof( struct equeue ) );
-  if( !queue ) return queue;
+  node = ( struct elem* )malloc( sizeof( struct elem ) );
+  if( !node ) return node;
 
-  queue->top = NULL;
-  queue->end = NULL;
+  node->data = key;
+  node->next = NULL;
 
-  return queue;
+  return node;
 }
 ```
 
-Le operazioni effettuate in questa procedura rispecchiano
-sostanzialmente le operazioni eseguite nel main precedentemente.
-L'unica differenza e' la memoria allocata. Da una parte allochiamo
-memoria in modo **statico** dall'altra in modo **dinamico**.
-Il vantaggio di allocare un oggetto coda in modo dinamico e'
-legato a un minor spreco di memoria, in quanto ogni qual volta
-il programma giungerà al termine ogni memoria allocata verrà
-deallocata.
+La creazione di un nuovo nodo ( in qualunque fase dell’esistenza
+di una lista ) avviene creando una nuova istanza della struttura
+tramite allocazione dinamica, ossia la capacità da parte di un
+programma, di _ottenere maggior spazio in memoria al tempo
+dell'esecuzione_.
+Le funzioni **malloc** e **free** e **sizeof** sono essenziali
+per l'allocazione dinamica.
 
 
 Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.

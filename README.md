@@ -108,9 +108,6 @@ creare il modo di riferirsi ad essa.
 
 
 
-\\[ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \\]
-
-
 
 La coda :
 ----------

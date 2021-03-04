@@ -28,12 +28,12 @@ possono crescere e ridursi al momento dell'esecuzione.
   ovunque.
 
 - Lo **stack** e' un tipo di lista collegata molto importante nei sistemi
- operativi e compilatori. Le inserzioni e cancellazioni vengono fatte
+  operativi e compilatori. Le inserzioni e cancellazioni vengono fatte
  _solo a un estremo_, ovvero la sua **cima**.
 
 - Le **code** rappresentano le linee di attesa; le inserzioni vengono fatte
   _solo alla fine_ ( indicata con **tail** ) di una coda e le rimozioni
-  vengono fatte _solo all'inizio_( indicato con **head** ) di una coda.
+  vengono fatte _solo all'inizio_ ( indicato con **head** ) di una coda.
 
 Ricordate che una _struttura autoreferenziale_ contiene un membro puntatore
 che punta a una struttura dello stesso tipo. La definizione delle strutture
@@ -78,7 +78,7 @@ Creazione della coda :
 ----------
 
 Per creare una coda, basta definirla, ovvero è sufficiente
-creare il modo di riferirsi ad essa.
+creare il modo di riferirsi a essa.
 L’unica cosa che esiste sempre della coda è il suo **punto di
 accesso** ( o radice ). In alternativa e' possibile definire soltanto
 un puntatore alla struttura coda. Questo concetto verrà chiarito in seguito.
@@ -99,5 +99,46 @@ int main( void ) {
   return 0;
 }
 ```
+
+In modo alternativo, definiamo soltanto un puntatore alla struttura coda :
+
+```
+int main( void ) {
+
+  struct equeue* coda = NULL;
+
+  ...
+
+  return 0;
+}
+```
+
+Procedura init() :
+----------
+
+```
+struct equeue *init( void ) {
+
+  struct equeue *queue;
+
+  queue = ( struct equeue* )malloc( sizeof( struct equeue ) );
+  if( !queue ) return queue;
+
+  queue->top = NULL;
+  queue->end = NULL;
+
+  return queue;
+}
+```
+
+Le operazioni effettuate in questa procedura rispecchiano
+sostanzialmente le operazioni eseguite nel main precedentemente.
+L'unica differenza e' la memoria allocata. Da una parte allochiamo
+memoria in modo **statico** dall'altra in modo **dinamico**.
+Il vantaggio di allocare un oggetto coda in modo dinamico e'
+legato a un minor spreco di memoria, in quanto ogni qual volta
+il programma giungerà al termine ogni memoria allocata verrà
+deallocata.
+
 
 Per maggiori dettagli visitare la repository **[ library ]( https://github.com/GiandomenicoIameo/library )** su **github**.
